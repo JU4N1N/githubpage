@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platillos y más</title>
+    <link rel="stylesheet" href="Comida.css">
+</head>
+<body>
+
+    <!--En esta primera div coloco hasta arriba de mi página un recuadro con el lema del restaurante-->
+    <div id="lema"><p><b>"Amore & Sapore: Donde la pasión italiana se encuentra con cada bocado"</b></p></div>
+
+    <!--Luego luego seguidito coloqué una versión más comprimida del logo principal, dentro de una div con forma ovalada para un mejor diseño -->
+    <div id="logo">
+        <img src="img/A & S.jpg" alt="Logo">
+    </div>
+
+    <!--Aquí vuelvo a utilizar una div para meter más divs y poder acomodar mejor las divs, ya que aquí coloqué 4 divs que son hrefs en imágenes hacia los títulos de cada platillo, con un diseño sencillo, en una div circular-->
+    <div id="blank1">
+        <div class="boton">
+            <div id="platos"><a href="#pp"><img src="img/Platos.jpg" alt="logo de platos"></a></div>
+            <p>Platos principales</p>
+        </div>
+
+        <div class="boton">
+            <div id="beb"><a href="#b"><img src="img/bebidas.jpg" alt="logo de bebidas"></a></div>
+            <p>Bebidas</p>
+        </div>
+
+        <div class="boton">
+            <div id="post"><a href="#p"><img src="img/postre.JPG" alt="logo de postres"></a></div>
+            <p>Postres</p>
+        </div>
+
+        <div class="boton">
+            <div id="pack"><a href="#paq"><img src="img/Paquete.png" alt="logo de paquetes"></a></div>
+            <p>Paquetes</p>
+        </div>
+    </div>
+
+    
+    <!--Y aquí es la parte más larga del código. Primeramente utilicé varias class, ya que el diseño se repitió en todas las divs de cada apartado (platillos, bebdias, postres y paquetes)-->
+    <!--De ese modo evito hacer un diseño para cada platillo. Aquí también coloco el título de cada platillo con una div con borde-->
+    <!--Utilizó la class blank para que de igual forma todos los apartados tomen el mismo diseño, 2 columnas y dos divs en cada fila-->
+    <!--Cada class menu es la div padre, que contiene una imagen, un texto(que contiene un títuloy un párrafo) y otro texto para el precio, todas estas en divs para un manejo más sencillo-->
+    <!--Y esto de la class menu se repite para cada bebida(5), postre(4), platillo(8) y paquete(3)-->
+    
+    <div class="titulo">
+        <div id="pp"><h1>Platos principales</h1></div>
+    </div>
+
+    <div class="blank">
+        <div class="menu">
+            <div class="foto"><img src="img/Ossobuco.jpg" alt="Foto de Ossobuco"></div>
+            <div class="texto">
+                <h2><u>OSSOBUCO</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Porción individual(350-400 g) - $450.00</h3>
+                </div>
+                <p >Receta tradicional de la comida italiana la cual consta de un estofado de ternera sin deshuesar que se cocina a fuego lento durante varias horas con verduras, salsa de tomate, caldo de carne y vino.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Vitel toné.jpg" alt="Foto de Vitel toné"></div>
+            <div class="texto">
+                <h2><u>VITEL TONÉ</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Plato fuerte(150-180 g) - $220.00</h3>
+                </div>
+                <p>Originaria de la región de Piamonte donde la carne vacuna es el ingrediente principal acompañado de salsa de yema de huevo, atún, aceite y anchoas.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Arancini.jpg" alt="Foto de Arancinis"></div>
+            <div class="texto">
+                <h2><u>ARANCINIS</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Porción de 5 piezas(200-250 g) - $180.00</h3>
+                </div>
+                <p>Bolas de arroz empanadas y fritas. Van rellenas de queso, principalmente mozzarella, y se puede alegrar con un poco de jamón, ragú, setas y mucho más.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Pappa.jpg" alt="Foto de Pappa al pomodoro"></div>
+            <div class="texto">
+                <h2><u>PAPPA AL POMODORO</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Tazón grande(200-250 g) - $170.00</h3>
+                </div>
+                <p>Es un plato basado en el tomate y el pan que se cocina en caliente, para tomar luego en frío o a temperatura ambiente</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Carbonara(2).jpg" alt="Foto de Pasta carbonara"></div>
+            <div class="texto">
+                <h2><u>CARBONARA</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Plato fuerte(300-350 g) - $300.00</h3>
+                </div>
+                <p>Se prepara con pocos ingredientes pero de alta calidad: pasta (generalmente espaguetis), panceta o guanciale, huevos, queso pecorino romano y pimienta negra. La clave de este plato radica en la preparación cuidadosa y en la mezcla de los ingredientes en el momento adecuado.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Tagliatelle.jpg" alt="Foto de Tagliatelle"></div>
+            <div class="texto">
+                <h2><u>TAGLIATELLE</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Plato fuerte(300-350 g) - $320.00</h3>
+                </div>
+                <p>La salsa boloñesa es un ragú robusto y sustancioso preparado con carne picada (usualmente una mezcla de carne de res y cerdo), vegetales como cebolla, zanahoria y apio, tomate, vino tinto y, a veces, leche o crema para suavizar la acidez de los tomates.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Piadinas.jpg" alt="Foto de Piadinas"></div>
+            <div class="texto">
+                <h2><u>PIADINAS</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>3 piezas(150-200 g) - $200.00</h3>
+                </div>
+                <p>La piadina es un pan plano hecho con una masa sencilla a base de harina de trigo, agua, aceite de oliva (o manteca de cerdo), sal y, a veces, un poco de levadura o bicarbonato de sodio. Tradicionalmente, las piadinas se rellenan con una variedad de ingredientes frescos y sabrosos.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Sopa minestrone.jpg" alt="Foto de Sopa minestrone"></div>
+            <div class="texto">
+                <h2><u>SOPA MINESTRONE</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Tazón grande(250-300 g) - $170.00</h3>
+                </div>
+                <p>Se caracteriza por estar compuesta de una variedad de verduras, como ingredientes comunes destacar la zanahoria, la cebolla y judías verdes, todo bien picadito y acompañado de una pasta seca corta o en algunas ocasiones de arroz.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="titulo">
+        <div id="b"><h1>Bebidas</h1></div>
+    </div>
+
+    <div class="blank">
+        <div class="menu">
+            <div class="foto"><img src="img/Leonardo_Phoenix_A_warm_and_inviting_still_life_of_a_Chianti_w_2.jpg" alt="Foto de Vino"></div>
+            <div class="texto">
+                <h2><u>VINO DE CHIANTI</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Copa/botella - $180.00/$900.00</h3>
+                </div>
+                <p>El Chianti se elabora principalmente a partir de la uva Sangiovese, aunque a menudo se mezcla con otras variedades como Canaiolo, Colorino, Cabernet Sauvignon o Merlot para añadir complejidad y equilibrio.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Vermouth.jpg" alt="Foto de Vermut"></div>
+            <div class="texto">
+                <h2><u> VERMOUTH</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Copa - $150.00</h3>
+                </div>
+                <p>El vermouth de Piamonte es una bebida icónica de Italia producida a partir de vinos blancos aromáticos fuertes y macerada durante un año con especias, hierbas y caramelo. Sus variantes pueden ser seco (dulce), blanco o rojo.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Amaretto(2).jpg" alt="Foto de Amaretto"></div>
+            <div class="texto">
+                <h2><u>AMARETTO</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Copa - $160.00</h3>
+                </div>
+                <p>Se trata de una bebida que combina el dulzor del albaricoque con el amargo de la almendra. Su carácter definitivo se lo da el fondo de hierbas aromáticas y la vainilla.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Limoncello.jpg" alt="Foto de Limoncello"></div>
+            <div class="texto">
+                <h2><u>LIMONCELLO</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Copa - $140.00</h3>
+                </div>
+                <p>Elaborado a partir de la maceración en alcohol de cáscaras de limón, muchas veces se mezcla con otros cítricos y siempre con un jarabe de agua y azúcar</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Aguas.jpg" alt="Foto de Aguas"></div>
+            <div class="texto">
+                <h2><u>AGUA DE SABOR</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Vaso(750 ml) - $60.00</h3>
+                </div>
+                <p>Una vairedad de sabores naturales de agua, como horchata, jamaica, piña, limón y pepino.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="titulo">
+        <div id="p"><h1>Postres</h1></div>
+    </div>
+
+    <div class="blank">
+        <div class="menu">
+            <div class="foto"><img src="img/Castagnole.jpg" alt="Foto de Castagnole"></div>
+            <div class="texto">
+                <h2><u>CASTAGNOLE</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Porción de 6 piezas - $120.00</h3>
+                </div>
+                <p>Pequeñas bolitas de masa frita que se pasan por azúcar, similar a los buñuelos. Tienen un sabor delicado con un aroma a limón y vainilla, y a veces un toque de anís </p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Tiramisú.jpg" alt="Foto de Tiramisú"></div>
+            <div class="texto">
+                <h2><u>TIRAMISÚ</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Porción individual - $180.00</h3>
+                </div>
+                <p>Esta receta se caracteriza por tener una textura suave y gelatinosa. Se sirve frío y permite todo tipo de combinaciones con frutas, salsas, infusiones e inclusos quesos, ideal para disfrutar en cualquier ocasión.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Panna.jpg" alt="Foto de Panna cotta"></div>
+            <div class="texto">
+                <h2><u>PANNA COTTA</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Porción individaul - $160.00</h3>
+                </div>
+                <p>Se elabora a partir de nata (crema de leche), azúcar y gelatina. A menudo se aromatiza con vainilla, pero también se pueden agregar otros sabores como café, chocolate, o frutas.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Torta caprese.jpg" alt="Foto de Torta caprese"></div>
+            <div class="texto">
+                <h2><u>TORTA CAPRESE</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>Porción individual - $200.00</h3>
+                </div>
+                <p>Es un pastel sin harina, lo que le confiere una textura densa y húmeda. Los ingredientes principales son almendras molidas, chocolate negro, mantequilla, huevos y azúcar. A veces se le añade un toque de licor como el ron o el brandy para intensificar el sabor.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="titulo">
+        <div id="paq"><h1>Paquetes</h1></div>
+    </div>
+
+    <div class="blank">
+        <div class="menu">
+            <div class="foto"><img src="img/Sapore di casa(2).JPG" alt="Foto de paquete1"></div>
+            <div class="texto">
+                <h2><u>SAPORE DI CASA</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>$600.00</h3>
+                </div>
+                <p>Disfruta de una comida italiana reconfortante con una entrada de pappa al pomodoro, pasta carbonara como plato principal, castagnole de postre y una bebida de tu elección (agua o vermouth).</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Buon apetito(2).JPG" alt="Foto de paquete2"></div>
+            <div class="texto">
+                <h2><u>BOUN APETITO</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>$1200.00</h3>
+                </div>
+                <p>Experimenta una cena completa con arancini sicilianas, tagliatelle al ragú a la boloñesa, ossobuco, tiramisú y una copa de vino de Chianti</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="foto"><img src="img/Festa italiana(2).JPG" alt="Foto de paquete3"></div>
+            <div class="texto">
+                <h2><u>FESTA ITALIANA</u></h2> 
+                <div class="precios_tamaño">
+                    <h3>$1500.00</h3>
+                </div>
+                <p>Celebra con vitel toné y piadinas variadas como entrantes, sopa minestrone, ossobuco, torta caprese y panna cotta para el postre, acompañados por limoncello, vino de Chianti y amaretto.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Y finalmente, vuelvo a poner el pie de página, que es literalmente un copai y pega del pie de página de la página principal-->
+    <footer class="footer">
+        <div class="redes">
+            <div><img src="img/Fb.png" alt="Facebook"></div>
+            <div><img src="img/X.png" alt="Twitter/X"></div>
+            <div><img src="img/Ig.png" alt="Instagram"></div>
+        </div>
+        <div class="logo">
+            <img src="img/Leonardo_Phoenix_A_logo_for_Amore_Sapore_an_Italian_restauran_0.jpg" alt="Logo del restaurante">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
+            <p><b>By Juan Pablo Moreno Cruz</b></p>
+        </div>
+        <div class="textoext">
+            <p>Materia: Programación web 1</p>
+            <p>Correo: juanp.morecruz@gmail.com</p>
+            <p>ATENCIÓN A CLIENTES: 55-4840-1614</p>
+            <p>Horario: 9:00 - 22:00</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+    

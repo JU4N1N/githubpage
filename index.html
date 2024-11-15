@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amore & Sapore</title>
+    <link rel="stylesheet" href="Restaurante.css">
+</head>
+<body>
+
+    <!--Esta primer div almacena la imagend e mi logo que se presenta al principio de la página-->
+    <div id="logo"></div>
+
+    <!--Esta div es el menú para poder viajar por la página, con usus respectivos hrefs-->
+    <div id="opciones">
+        <ul style="list-style: none;">
+            <li><a href="#home">Menú principal</a></li>
+            <li><a href="#food">Platillos y bebidas</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#prom">Promociones</a></li>
+        </ul>
+    </div>
+
+    <!--A partir de aquí se repiten las divs con la class "título", para las diferentes secciones de la página (Menú, platillos, galería y promociones)-->
+    <div class="titulo">
+        <h2 id="home"><b>Menú principal</b></h2>
+    </div>
+
+    <!--Aquí la div cont1 es la div padre, que contiene otras dos divs para texto(donde se da una introducción al restaurante) y para una imagen(del restaurante), esto para poder tener mejor control de loos elementos-->
+    <div id="cont1">
+        <div id="texto_int">
+            <h2>Quienes somos?</h2>
+            <p>En Amore & Sapore, creemos que la comida es mucho más que una simple necesidad; es una experiencia que conecta corazones, despierta los sentidos y crea recuerdos inolvidables. Nuestro restaurante nació del amor por la auténtica cocina italiana y el deseo de compartir esa pasión con nuestra comunidad.
+            Desde nuestros inicios, hemos sido guiados por un principio fundamental: ofrecer a nuestros comensales una experiencia gastronómica excepcional. Cada plato que servimos es el resultado de una cuidadosa selección de ingredientes frescos y de alta calidad, combinados con técnicas tradicionales y un toque moderno.</p>
+            <p>Nuestro equipo de talentosos chefs se dedica a crear recetas que celebran los sabores y aromas de Italia, transportándote a las pintorescas calles de Roma, la romántica Venecia o las soleadas costas de Sicilia. Nos enorgullecemos de ofrecer un ambiente acogedor y familiar, donde cada visitante es recibido 
+            con una sonrisa y tratado como parte de nuestra gran familia. Ya sea que vengas a celebrar una ocasión especial, a disfrutar de una cena íntima o simplemente a relajarte con amigos, te aseguramos que cada visita será una experiencia única y memorable.
+            Creemos en la importancia de mantener vivas las tradiciones culinarias, mientras innovamos para ofrecerte lo mejor de ambos mundos. En Amore & Sapore, cada bocado está lleno de amor y sabor, porque sabemos que es en los pequeños detalles donde se encuentran los mayores placeres. Te invitamos a descubrir la magia de Italia en cada plato y a ser parte de nuestra historia. Ven y déjate seducir por la pasión que 
+            nos mueve y el sabor que nos define. ¡Benvenuti a Amore & Sapore!</p>
+        </div>
+        <div id="img1"><img src="img/Leonardo_Phoenix_updatedpromptA_warm_and_inviting_background_f_1.jpg" alt="Ia"></div>
+    </div>
+
+
+    <div class="titulo">
+        <h2 id="food"><b>Platillos y bebidas</b></h2>
+    </div>
+
+    <!--Aquí utilcé la div con la class blank, más adelante lo vuelvo a utilizar para poder manejar más facil los elmentos, porque los elementos que metí enestas divs tienen el mismo diseño-->
+    <div class="blank">
+        <!--Aquí son divs con una imagen y un href hacia otro html, esto por eficiencia y diseño, cabe destacar que todos los elementos(paltillos, bebidas, postres y paquetes) llevan a la misma página sin importar a cuál se le de click-->
+        <div class="comida">
+            <a href="index1.html">
+                <img src="img/Platillos.jpg" alt="Plato de spaghetti">
+                <p>Platillos principales</p>
+            </a>
+        </div>
+
+        <div class="comida">
+            <a href="index1.html">
+                <img src="img/bebidillas.jpg" alt="Bebida roja">
+                <p>Bebidas</p>
+            </a>
+        </div>
+
+        <div class="comida">
+            <a href="index1.html">
+                <img src="img/postresillos.png" alt="Galleta de chocolate">
+                <p>Postres</p>
+            </a>
+        </div>
+
+        <div class="comida">
+            <a href="index1.html">
+                <img src="img/paquetillos.jpg" alt="Paquete de comida">
+                <p>Paquetes</p>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="titulo">
+        <h2 id="gallery"><b>Galería</b></h2>
+    </div>
+
+    <!--Esta div cont2 tiene el mismo diseño que el cont1 de arriba solocon pequeños cambios al tamaño de ancho, para que se pudiera acoplar correctamente al deiseño general, aquí únicamente metí imágenes para representar la galería-->
+    <div id="cont2">
+        <img src="img/Leonardo_Phoenix_A_warm_and_inviting_Italian_restaurant_Amore_3 (1).jpg" alt="Ingredientes italianos">
+        <img src="img/Leonardo_Phoenix_A_warmly_lit_inviting_photograph_of_a_selecti_1.jpg" alt="Imagen ia">
+        <img src="img/Leonardo_Phoenix_A_warm_and_inviting_Italian_restaurant_Amore_3.jpg" alt="Imagen ia">
+        <img src="img/Leonardo_Phoenix_A_cozy_Italian_restaurant_Amore_Sapore_with_0.jpg" alt="Imagen ia">
+        <img src="img/Leonardo_Phoenix_A_warm_and_inviting_Italian_restaurant_Amore_2.jpg" alt="Comida italiana">
+    </div>
+
+
+    <div class="titulo">
+        <h2 id="prom"><b>Promociones</b></h2>
+    </div> 
+
+    <!--Llegamos al mencionado segundo blank, el diseño es el mismo que al de arriba, solo que aquí no hay hrefs, es decir no hay links a otros lados, es simple texto para describir las pormociones existentes-->
+    <div class="blank">
+        <div class="promos">
+            <div class="foto_promo"><img src="img/Martes de pata.jpg" alt="Imagen de promo1"></div>
+            <div class="text_promo">
+                <h3>Martes de pasta</h3>
+                <p>Pasta ilimitada cada martes por un precio fijo. Posibilidad de elegir entre varias opciones de salsas y tipos de pasta</p>
+                <p>Incluye también una bebida y un pequeño postre</p>
+            </div>
+        </div>
+
+        <div class="promos">
+            <div class="foto_promo"><img src="img/Amore a la italiana.jpg" alt="Imagen de promo2"></div>
+            <div class="text_promo">
+                <h3>Amore a la italiana</h3>
+                <p>Un menú especial para dos personas que incluye un antipasto (entrada), dos platos fuertes a elección, una botella de vino de la casa y un postre para compartir.</p>
+                <p>Ideal para parejas</p>
+            </div>
+        </div>
+
+        <div class="promos">
+            <div class="foto_promo"><img src="img/Sábado de pizza.jfif" alt="Imagen de promo3"></div>
+            <div class="text_promo">
+                <h3>Sábado de pizza</h3>
+                <p>Los sábados, los clientes podrán personalizar su pizza con hasta tres ingredientes adicionales sin costo extra</p>
+                <p>Incluye una bebida refrescante</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Y fianlemente está el pie de página, donde coloco 3 divs, en la de la izquierda coloco los logos de las redes, en la de medio, el segundo diseño de logo y mi nombre y en la derecha info en general.-->
+    <footer class="footer">
+        <div class="redes">
+            <div><img src="img/Fb.png" alt="Facebook"></div>
+            <div><img src="img/X.png" alt="Twitter/X"></div>
+            <div><img src="img/Ig.png" alt="Instagram"></div>
+        </div>
+        <div class="logo">
+            <img src="img/Leonardo_Phoenix_A_logo_for_Amore_Sapore_an_Italian_restauran_0.jpg" alt="Logo del restaurante">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
+            <p><b>By Juan Pablo Moreno Cruz</b></p>
+        </div>
+        <div class="textoext">
+            <p>Materia: Programación web 1</p>
+            <p>Correo: juanp.morecruz@gmail.com</p>
+            <p>ATENCIÓN A CLIENTES: 55-4840-1614</p>
+            <p>Horario: 9:00 - 22:00</p>
+        </div>
+    </footer>
+
+</body>
+</html>
